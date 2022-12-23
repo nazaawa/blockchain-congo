@@ -17,3 +17,7 @@ Blockchain.prototype.createNewBloc =  function (nounce, previousBlocHash , hash)
     this.chain.push(newBlock);
     return newBlock;
 }
+
+
+
+module.exports = Blockchain;
