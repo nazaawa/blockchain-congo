@@ -18,6 +18,16 @@ Blockchain.prototype.createNewBloc =  function (nounce, previousBlocHash , hash)
     return newBlock;
 }
 
+Blockchain.prototype.lastChainBlock = function(){
+    return this[this.chain.length - 1];
+}
+
+Blockchain.prototype.createNewTransactions = function(amount,sender ,recipient){
+    const newTransaction = { amount : amount, sender : sender,recipient : recipient};
+    this.transactions.push(newTransaction);
+
+    return newTransaction;
+}
 
 
 module.exports = Blockchain;
