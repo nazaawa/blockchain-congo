@@ -1,8 +1,7 @@
-const Blockchain =  require("./blockchain").default
+const Blockchain =  require("./blockchain")
 const bitcoin =  new Blockchain();
 bitcoin.createNewBloc(234,"erer","ererre")
-bitcoin.createNewBloc(214,"ererhjkr","ererre")
-bitcoin.createNewBloc(234,"ereer","ereddrre")
-bitcoin.createNewBloc(235,"erefgfr","ererre")
+bitcoin.createNewTransactions(214,"johny","alex")
+bitcoin.createNewBloc(234,"erdffer","erzererre")
 
-console.log(bitcoin)
+console.log(bitcoin.chain[1])

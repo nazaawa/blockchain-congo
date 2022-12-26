@@ -19,7 +19,7 @@ Blockchain.prototype.createNewBloc =  function (nounce, previousBlocHash , hash)
 }
 
 Blockchain.prototype.getlastBlock = function(){
-    return this[this.chain.length - 1];
+    return this.chain[this.chain.length - 1];
 }
 
 Blockchain.prototype.createNewTransactions = function(amount,sender ,recipient){
